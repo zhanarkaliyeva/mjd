@@ -1,0 +1,375 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #000000;
+    color: white;
+}
+
+
+.topnav a.active {
+    background-color: #e68a00;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+}
+
+
+.logo img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    margin-left: -57%;
+}
+
+.logo-text {
+    position: absolute;
+    left: 75px;
+    top: 15px;
+    color: white;
+    width: 50%;
+}
+
+.logo-text-sm {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .logo-text {
+    display: none;
+  }
+  .logo-text-sm{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    left: 75px;
+    top: 20px;
+  }
+}
+
+.parallax {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/8.jpg");
+    height: 800px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: contain, cover;  
+
+}
+
+.together{
+    position: relative;
+}
+
+.together .container{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.container { 
+    position: relative;
+    width: 100%; 
+     
+}
+.container .row { 
+    float: left; 
+    clear: both;
+    width: 100%; 
+}
+.container .col { 
+    float: left; 
+    margin: 0 0 1.2em; 
+    padding-right: 1.2em; 
+    padding-left: 1.2em; 
+}
+
+.container .col.three{ 
+    width: 100%; 
+}
+
+@media screen and (min-width: 767px) {
+    .container{
+        width: 100%; 
+        max-width: 1800px; 
+        margin: 0 auto;
+    }
+    .container .row{
+        width:100%; 
+        float:left; 
+        clear:both;
+    }
+    .container .col{
+        float: left; 
+        margin: 6em 24em 1em; 
+        padding-right: .5em; 
+        padding-left: .5em;
+    }
+    .container .col.three { 
+        width: 24.99%; 
+    }
+}
+
+* {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+a{
+    text-decoration:none;
+}
+
+.btn {
+    font-size: 20px; 
+    white-space:nowrap; 
+    width:100%; 
+    padding:1em; 
+    font-family: Open Sans, Helvetica,Arial,sans-serif; 
+    line-height:48px; 
+    display: inline-block;
+    zoom: 1; 
+    color: #fff; 
+    text-align: center;
+    position:relative; 
+    -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear; 
+    transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+
+.btn.btn-rouge{
+    background-color: #c0392b; 
+    border-color: #c0392b; 
+    -webkit-box-shadow: 0 3px 0 #8f2a1f; 
+    box-shadow: 0 3px 0 #8f2a1f;
+}
+.btn.btn-rouge:hover{
+    background-color:#ac3420;
+}
+.btn.btn-rouge:active{
+    top: 3px; 
+    outline: none; 
+    -webkit-box-shadow: none; 
+    box-shadow: none;
+}
+
+
+footer {
+    background-color: #333;
+    bottom: 0;
+    width: 100%;
+
+}
+
+#social {
+    display: table;
+    margin: 0 auto;
+}
+
+
+#social ul li{
+    padding: 10px;
+    display: inline;
+    list-style-type: none;
+}
+
+.fa{
+    color: #fff;
+}
+
+
+.info img{
+    margin: 0px 20px 0px 20px;
+    float: left;  
+    width: 320px;
+    height: auto;
+}
+
+.about.mj {
+    margin: 20px 20px 0 20px;
+    text-align: justify;
+}
+
+.mazhit {
+    float: right;
+    margin: 20px 0px 0px 0px;
+    width: 350px;
+    height: auto;
+}
+
+.zhanar{
+   float: left;
+   margin: 20px 0px 40px 0px;
+}
+
+.center {
+    display: inline-block;
+}
+.first.paragraph{
+    text-indent: 50px;
+}
+@media screen and (max-width: 600px) {
+    .info img{
+        width: 90%;
+    }
+    .mazhit{
+        float: none;
+        width: 100%;
+    }
+}
+
+h2 {
+    font-family: Trattatello, fantasy;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+iframe {
+    width: 100%;
+}
+@media screen and (min-width: 600px){
+    iframe {
+        width: 30%;
+    }
+}
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+/* Style the contact section */
+.contact {
+
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+/* Create two columns that float next to eachother */
+.contactcolumn {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+/* Clear floats after the columns */
+.contactrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .contactcolumn, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+#mail{
+    margin: 20px 0px 20px 20px;
+}
